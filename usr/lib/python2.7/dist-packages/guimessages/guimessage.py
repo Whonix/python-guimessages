@@ -1,5 +1,9 @@
 #!/usr/bin/python
 
+## Copyright (C) 2014 troubadour <trobador@riseup.net>
+## Copyright (C) 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
 from PyQt4 import QtGui
 from guimessages import translations
 
@@ -28,4 +32,4 @@ class gui_message(QtGui.QMessageBox):
         self.setWindowTitle(self._('title'))
         self.setText(self._('message'))
 
-        self.exec_()
+        self.exec()

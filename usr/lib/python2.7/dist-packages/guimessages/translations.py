@@ -1,8 +1,11 @@
 #!/usr/bin/python
 
+## Copyright (C) 2014 troubadour <trobador@riseup.net>
+## Copyright (C) 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
 import sys
 import locale, yaml
-
 
 DEFAULT_LANG = 'en'
 
