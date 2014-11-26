@@ -32,4 +32,4 @@ class gui_message(QtGui.QMessageBox):
         self.setWindowTitle(self._('title'))
         self.setText(self._('message'))
 
-        self.exec()
+        self.exec_()
