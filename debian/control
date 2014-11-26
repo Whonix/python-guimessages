@@ -3,7 +3,7 @@
 ## See the file COPYING for copying conditions.
 
 Source: python-guimessages
-Section: misc
+Section: python
 Priority: optional
 Maintainer: troubadour <trobador@riseup.net>
 Build-Depends: debhelper (>= 8), config-package-dev (>=5), python (>= 2.6)
@@ -16,7 +16,7 @@ Package: python-guimessages
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-yaml
 Recommends:
-Description: python-guimessages python library
+Description: Translatable GUI Messages
  Generic modules guimessage.py and translations.py.
  Called with two parameters: .yaml file path and yaml section. Return
  translations according to distribution local language (Python 'locale').
