@@ -15,8 +15,8 @@ Standards-Version: 3.9.4
 Package: guimessages
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-yaml
-Recommends: 
+Recommends:
 Description: guimessages python library
-Generic modules guimessage.py and translations.py.
-Called with two parameters: .yaml file path and yaml section. Return 
-translations according to distribution local language (Python 'locale'). 
+ Generic modules guimessage.py and translations.py.
+ Called with two parameters: .yaml file path and yaml section. Return
+ translations according to distribution local language (Python 'locale').
