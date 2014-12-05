@@ -3,7 +3,7 @@
 from distutils.core import setup
 
 setup(name='guimessages',
-      version='1.0',
+      version='0.0.6',
       description='Python translation utilities',
       author='troubadoour',
       author_email='trobador@riseup.net',
