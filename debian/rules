@@ -7,7 +7,7 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ -O--buildsystem=python_distutils
+	dh $@
 
 #override_dh_install:
 	#$(CURDIR)/make-helper.bsh manpages
