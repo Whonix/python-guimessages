@@ -1,0 +1,175 @@
+commit cf78dd60047889946c4a82a75f0fae994773b731
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:40:48 2015 +0000
+
+    updated makefile generic to version 1.3
+
+commit 86db617a63a033c21e8f270158e0f74f6d112676
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 23:58:51 2015 +0000
+
+    Added creation of upstream changelog to debian/rules
+
+commit 939b1ee4ff0bb515dc07538a32849fba299adbbd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:43:54 2015 +0000
+
+    updated readme
+
+commit 3874854d6b99e0c4ce99ba2d2b6052a12735d5da
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:34:51 2015 +0000
+
+    bumped compat from 8 to 9
+
+commit 766561f1bbf9db49e6956de6a180b1ba6c630cf9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 13 14:03:55 2014 +0000
+
+    reverted to generic packaging method
+
+commit c4d3cd331fe749ceb6cd15c829e7ae4f5e970666
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 5 19:01:18 2014 +0000
+
+    updated generic makefile
+
+commit c1f7546e765360c2895357251e000d20780860b0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 5 17:47:02 2014 +0000
+
+    packaging
+
+commit 3a510a236bea808e514e728da7f340d688dd6c3b
+Merge: 8ff49a2 102aeca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 4 21:21:40 2014 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit 8ff49a26e9441ff7fd463b2136cddfade8612428
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Dec 4 20:38:56 2014 +0000
+
+    minor
+
+commit 102aeca05a3f5c627ce5fcd8d0325484d58ad774
+Author: troubadoour <trobador@riseup.net>
+Date:   Wed Dec 3 22:51:01 2014 +0000
+
+    - guimessage.py, + guimessages/guimessage.py
+
+commit 0325acdcd6f9215695df1cd461f7990b7df1abe9
+Author: troubadoour <trobador@riseup.net>
+Date:   Wed Dec 3 22:38:02 2014 +0000
+
+    + main() for use from the shell (initialize gui).
+
+commit 03587c3d127274448aee2a6a344d1393c35d2d44
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 1 22:35:56 2014 +0000
+
+    minor
+
+commit 1df05bf85ce81d3734bbab6d3dd8e07401d56545
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 1 22:32:33 2014 +0000
+
+    minor
+
+commit 8bd1f4d24c53b0a29a2f94771f2b5dd7f9a2ddd0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 1 22:28:01 2014 +0000
+
+    removed obsolete files from previous packaging method
+
+commit 298bcbc47cc175c961b697384cb4670b5158e307
+Merge: d61ebab 93c637e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Dec 1 22:25:36 2014 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit 93c637ece3a8eafb4487da54b94e5d176b3284c4
+Author: troubadoour <trobador@riseup.net>
+Date:   Mon Dec 1 16:06:28 2014 +0100
+
+    python packaging, initial ralease
+
+commit d61ebabb2298f3b6f17ae3af94193dcbd2dfc2fd
+Author: troubadoour <trobador@riseup.net>
+Date:   Thu Nov 27 00:11:57 2014 +0100
+
+    letal typo.
+
+commit 83ffa6c5d0c715e1e79842a2accd569a814d204b
+Author: troubadoour <trobador@riseup.net>
+Date:   Wed Nov 26 23:59:36 2014 +0100
+
+    license headers
+
+commit dfe28a839a717ed5542aea60e65e6d76917b09ad
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 26 20:25:32 2014 +0000
+
+    added "Uploaders: Patrick Schleizer <adrelanos@riseup.net>" to debian/control to fix two lintian errors ("python-guimessages source: changelog-should-mention-nmu" and "python-guimessages source: source-nmu-has-incorrect-version-number 3:0.2-1")
+
+commit 5bb90bcf4b3f64317a741d6b35e5ec57520cefa1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 26 20:18:32 2014 +0000
+
+    fixed two lintian warnings "description-starts-with-package-name" and "wrong-section-according-to-package-name python-guimessages => python"
+
+commit 55888c4422643fd1b66f2ca3488322b99135495c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 26 20:13:29 2014 +0000
+
+    fixed package name in debian/control
+
+commit fde7f458a6c4952ddaee8e97e5ec9a0ba57d1d81
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 26 20:11:42 2014 +0000
+
+    fixed package name in debian/changelog
+
+commit 1ce336f4b753579a55f8941b2eaeabebbcfd0884
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 26 20:07:51 2014 +0000
+
+    fixed package name in debian/watch
+
+commit be9ac00650eb4ec70b047d1420b3532688ecc8af
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 26 20:06:27 2014 +0000
+
+    this lib has no man page yet, commented out man page related code in debian/rules
+
+commit 0dc41c1e3bba509fb9eee3a9e495c03abe75cb28
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 26 20:05:26 2014 +0000
+
+    package description formatting fix
+
+commit b13c3e070a1d40c8f26b18ebbaafa70b7e48d2c0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Nov 26 20:04:25 2014 +0000
+
+    bumped version number
+
+commit 8d75f13eb14c21061ae8de04be136e9f704d1cb4
+Author: troubadoour <trobador@riseup.net>
+Date:   Wed Nov 26 17:44:24 2014 +0100
+
+    + button and screen position.
+
+commit 833ea10cdd62b7ba79155015a49f543e54943e92
+Author: troubadoour <trobador@riseup.net>
+Date:   Tue Nov 25 10:00:24 2014 +0100
+
+    removed bytecode files .pyc
+
+commit 59bff085a945d16879012042f43a2745960c23d9
+Author: troubadoour <trobador@riseup.net>
+Date:   Mon Nov 24 21:38:41 2014 +0100
+
+    initial release
