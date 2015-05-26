@@ -1,3 +1,15 @@
+commit e6b28926a320ac81bb9358e263d6f966836e28cd
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue May 26 15:39:25 2015 +0000
+
+    debian/control: removed empty 'Recommends:' field
+
+commit 06bda5644503c0a13a6c41f2a17734dbbf4c58a6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 30 17:56:46 2015 +0000
+
+    bumped changelog version
+
 commit 9c21c5fed6556a6081d4e905144743cd1c61f256
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Apr 28 13:43:21 2015 +0000
