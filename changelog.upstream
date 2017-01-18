@@ -1,3 +1,23 @@
+commit 1aae45d2fb6a90dc835aff01356b72ecf149c76d
+Merge: 9c39004 6c89657
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 18 11:37:21 2017 +0000
+
+    Merge remote-tracking branch 'joysn/master'
+
+commit 6c89657135fa621353efce059c430f6fbd94c177
+Author: joysn <joysn1980@yahoo.com>
+Date:   Wed Jan 18 08:25:40 2017 +0000
+
+    ctrl+c /SIGINT for guimessages
+    https://phabricator.whonix.org/T117
+
+commit 9c39004c45e5a465ff676c6599f0c78276208b8d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 15:34:22 2017 +0000
+
+    bumped changelog version
+
 commit ddcf2ae4bd881f2c9cc936477d118cb579e9f4d7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 15 08:35:39 2017 +0100
