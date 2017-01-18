@@ -36,6 +36,10 @@ class gui_message(QtGui.QMessageBox):
 
 def main():
     import sys
+    
+    import signal
+    signal.signal(signal.SIGINT, signal.SIG_DFL)
+    
     app = QtGui.QApplication(sys.argv)
     message = gui_message(sys.argv[1], sys.argv[2])
     sys.exit(app.exec_())
