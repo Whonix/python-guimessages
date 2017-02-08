@@ -14,7 +14,9 @@ class _translations():
         try:
             # credits to nrgaway.
             language = DEFAULT_LANG
-            language = locale.getdefaultlocale()[0].split('_')[0]
+            if locale.getdefaultlocale()[0] != None:
+                language = locale.getdefaultlocale()[0].split('_')[0]
+            #print('language is {}'.format(language))
             if language:
                 language = language
             self.translations = path
