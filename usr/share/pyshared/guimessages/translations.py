@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 ## Copyright (C) 2014 troubadour <trobador@riseup.net>
-## Copyright (C) 2014 Patrick Schleizer <adrelanos@riseup.net>
+## Copyright (C) 2014 - 2017 Patrick Schleizer <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
 import sys
@@ -10,27 +10,34 @@ import locale, yaml
 DEFAULT_LANG = 'en'
 
 class _translations():
-    def __init__(self, path, section):
-        try:
-            # credits to nrgaway.
-            language = DEFAULT_LANG
-            if locale.getdefaultlocale()[0] != None:
-                language = locale.getdefaultlocale()[0].split('_')[0]
-            #print('language is {}'.format(language))
-            if language:
-                language = language
-            self.translations = path
-            stream = file(self.translations, 'r')
-            data = yaml.load(stream)
-            if data:
-                self.section = data[section]
-                self.language = self.section.get(language, DEFAULT_LANG)
+   def yaml_get(self):
+      stream = file(self.path, 'r')
+      data = yaml.safe_load(stream)
+      self.xxx = data[self.section]
+      self.result = self.xxx.get(self.language, DEFAULT_LANG)
 
-        except (IOError):
-            # TODO: add code here.
-            pass
-        except (yaml.scanner.ScannerError, yaml.parser.ParserError):
-            pass
+   def gettext(self, key):
+      if self.result == None:
+         self.yaml_get()
+      try:
+         text = self.result.get(key, None)
+      except:
+         print('ERROR: No translation for language "{}", key "{}".'.format(self.language, key))
+         self.language = DEFAULT_LANG
+         self.yaml_get()
+         text = self.result.get(key, None)
+      return(text)
 
-    def gettext(self, key):
-        return self.language.get(key, None)
+   def __init__(self, path, section):
+      # credits to nrgaway.
+      self.path = path
+      self.section = section
+      self.language = DEFAULT_LANG
+      self.result = None
+      try:
+         if locale.getdefaultlocale()[0] != None:
+            self.language = locale.getdefaultlocale()[0].split('_')[0]
+      except:
+         self.language = DEFAULT_LANG
+         print('ERROR: locale.getdefaultlocale failed. Using "{}" as default'.format(self.language))
+      print('self.language is {}'.format(self.language))
