@@ -11,10 +11,10 @@ DEFAULT_LANG = 'en'
 
 class _translations():
    def yaml_get(self):
-      stream = file(self.path, 'r')
-      data = yaml.safe_load(stream)
-      self.xxx = data[self.section]
-      self.result = self.xxx.get(self.language, DEFAULT_LANG)
+      with open(self.path) as stream:
+         data = yaml.safe_load(stream)
+         self.xxx = data[self.section]
+         self.result = self.xxx.get(self.language, DEFAULT_LANG)
 
    def gettext(self, key):
       if self.result == None:
