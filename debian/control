@@ -16,7 +16,7 @@ Standards-Version: 3.9.8
 Package: python3-guimessages
 Replaces: python-guimessages
 Architecture: all
-Depends: ${misc:Depends}, python-yaml
+Depends: ${misc:Depends}, python3-yaml
 Description: Translatable GUI Messages
  Generic modules guimessage.py and translations.py.
  Called with two parameters: .yaml file path and yaml section. Return
