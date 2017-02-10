@@ -40,4 +40,4 @@ class _translations():
       except:
          self.language = DEFAULT_LANG
          print('ERROR: locale.getdefaultlocale failed. Using "{}" as default'.format(self.language))
-      print('self.language is {}'.format(self.language))
+      #print('self.language is {}'.format(self.language))
