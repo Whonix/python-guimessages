@@ -1,3 +1,97 @@
+commit 2a880a805fc70d723d986235cc55ed33738528fa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 10 15:47:51 2017 +0000
+
+    remove faketime from Build-Depends:
+    
+    since no longer used for reproducible builds
+
+commit d4408db8096ba3cce8a11c82bb150eca9e63a513
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 10 15:35:25 2017 +0000
+
+    remove debian/gain-root-command workaround
+
+commit f6b6d6f7d9ce4612b68f9579fec22236b3f0ad9c
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 10 14:44:49 2017 +0000
+
+    lower debugging
+
+commit bb890789e2bff97999eea7252b6b16e9100aa9c0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 9 22:27:52 2017 +0000
+
+    fix
+    
+      File "/usr/lib/python3/dist-packages/guimessages/translations.py", line 16, in yaml_get
+        with open(f) as stream:
+    NameError: name 'f' is not defined
+
+commit 4137679559de329e8f5a8aac77cf1dc21cd880b8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 9 17:16:57 2017 +0000
+
+    adjust dependencies for python3
+
+commit c0d7ccba62b1f6a44444b96301268e8e72ed3adf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 9 17:16:39 2017 +0000
+
+    move files into new location for python3
+
+commit ccb34b97b7d618d76354cb31b78ba4652f0e14ff
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 9 17:12:18 2017 +0000
+
+    port packaging to python3
+
+commit d7deaa07b0de9d23901b7adcef3804c61ced31c0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 9 16:59:30 2017 +0000
+
+    minor
+
+commit 3190c207c786e79abc93619fe00c669544be4fb5
+Merge: 52f21c1 4929f65
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 9 16:58:55 2017 +0000
+
+    Merge remote-tracking branch 'joysn/master'
+
+commit 4929f6546e32f7f4279f5166d58832cc95c1a063
+Author: joysn <joysn1980@yahoo.com>
+Date:   Thu Feb 9 16:19:28 2017 +0000
+
+    port python-guimessages to python3
+    https://phabricator.whonix.org/T627
+
+commit 52f21c1846035719396a7360eb1eef9be20c4c84
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 8 21:53:39 2017 +0000
+
+    make translations.py more robust against any value of the LANG env var
+
+commit 29cc6e4cf8c14afd5770b2b244ef35f51b962f0b
+Merge: 023ea63 b20b742
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 8 21:16:33 2017 +0100
+
+    Merge remote-tracking branch 'joysn/master'
+
+commit b20b742ceb13f9d1ea968105aaa0a7bb1b938700
+Author: joysn <joysn1980@yahoo.com>
+Date:   Wed Feb 8 15:32:14 2017 +0000
+
+    split not required for default language 'en'
+    https://phabricator.whonix.org/T625
+
+commit 023ea634b2c0788c827ca97d5449a34216c3f2d2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 18 14:32:06 2017 +0000
+
+    bumped changelog version
+
 commit d5119b28d9d462b3c5c42a75068a34e679c06810
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 18 11:39:30 2017 +0000
