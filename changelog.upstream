@@ -1,3 +1,19 @@
+commit 83b12e1e94e437631689518f78cee19647396f1e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 17 15:12:30 2017 +0000
+
+    remove dh-python from package build since not required
+    
+    fixes warning
+    
+    dpkg-gencontrol: warning: package python3-guimessages: unused substitution variable ${python3:Depends}
+
+commit 58a69c862d567bdddb8432d417921f8b7d216146
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 17 14:05:14 2017 +0000
+
+    bumped changelog version
+
 commit 2a880a805fc70d723d986235cc55ed33738528fa
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 10 15:47:51 2017 +0000
