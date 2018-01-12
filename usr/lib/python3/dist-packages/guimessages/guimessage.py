@@ -4,7 +4,9 @@
 ## Copyright (C) 2014 Patrick Schleizer <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
-from PyQt5 import QtGui,QtWidgets
+import sys
+import yaml
+from PyQt5 import QtGui, QtWidgets
 from guimessages import translations
 
 
@@ -14,11 +16,15 @@ class gui_message(QtWidgets.QMessageBox):
 
         tr = translations._translations(file_path, section)
 
-        self.icon = tr.section.get('icon')
-        self.button = tr.section.get('button')
+        stream = open(file_path, 'r')
+        data = yaml.safe_load(stream)
+        section = data[section]
 
-        if tr.section.get('position') == 'topleft':
-            self.move(0,0)
+        self.icon = section.get('icon', None)
+        self.button = section.get('button', None)
+
+        #if tr.section.get('position') == 'topleft':
+            #self.move(0,0)
 
         self._ = tr.gettext
         self.initUI()
@@ -26,8 +32,8 @@ class gui_message(QtWidgets.QMessageBox):
     def initUI(self):
         self.setWindowIcon(QtGui.QIcon("/usr/share/icons/anon-icon-pack/whonix.ico"))
 
-        self.setIcon(getattr(QtGui.QMessageBox, self.icon))
-        self.setStandardButtons(getattr(QtGui.QMessageBox, self.button))
+        self.setIcon(getattr(QtWidgets.QMessageBox, self.icon))
+        self.setStandardButtons(getattr(QtWidgets.QMessageBox, self.button))
 
         self.setWindowTitle(self._('title'))
         self.setText(self._('message'))
