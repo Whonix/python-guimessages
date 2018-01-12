@@ -1,3 +1,22 @@
+commit 5065e13181f60f9bc7b1dc5f7b85f05fcc8e1aa2
+Merge: 165ab9a ff30733
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 12 14:32:14 2018 +0000
+
+    Merge remote-tracking branch 'troubadoour/master'
+
+commit ff307332ca7de1109127964d436dd17141b821c5
+Author: troubadoour <trobador@riseup.net>
+Date:   Wed Jan 10 20:43:24 2018 +0000
+
+    fix attribute error in guimessage.py
+
+commit 165ab9aa74a0d27bfb511007c9323e601b0baad2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jul 26 14:35:31 2017 +0000
+
+    bumped changelog version
+
 commit 5e19823a417f3a5a3b0b4be839ebaf3bbacf8be7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Mar 13 17:26:44 2017 +0000
