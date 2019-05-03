@@ -1,3 +1,9 @@
+python-guimessages (3:2.2-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Fri, 03 May 2019 11:30:40 +0000
+
 python-guimessages (3:2.1-1) unstable; urgency=medium
 
   * New upstream version (local package).
