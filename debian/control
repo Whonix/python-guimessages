@@ -5,7 +5,7 @@ Source: python-guimessages
 Section: python
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@riseup.net>
-Build-Depends: debhelper (>= 12), genmkfile
+Build-Depends: debhelper (>= 12)
 Homepage: https://www.whonix.org/
 Vcs-Browser: https://github.com/troubadoour/python-guimessages
 Vcs-Git: https://github.com/troubadoour/python-guimessages.git
