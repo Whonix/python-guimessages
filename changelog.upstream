@@ -1,3 +1,35 @@
+commit 3785741f1593952fb6d878bd946760859d1079d4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 2 07:22:41 2020 -0400
+
+    readme
+
+commit e61bc8669c31f82972cbe6f4d51ef8126eecbd75
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 18:06:31 2020 -0400
+
+    add symlink debian/python3-guimessages.install -> debian/python-guimessages.install
+    
+    to fix packaging
+
+commit 42f2652fe8b22528d03ecc1b0f1078575671fd68
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 16:57:32 2020 -0400
+
+    remove genmkfile
+
+commit ee631e11c7b3a29476256f9438184630f7807319
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 16:32:57 2020 -0400
+
+    add debian install file
+
+commit 0aa44eb8ffadf24db791f3fc0c912bad8d12974d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 1 10:52:55 2020 -0400
+
+    bumped changelog version
+
 commit ba4817691890013efe50b67a8f97926b8715819b
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 1 08:49:58 2020 -0400
